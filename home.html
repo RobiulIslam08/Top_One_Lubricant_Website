@@ -4,18 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <!-- navbar  -->
-    <div >
+    <div>
       <!-- component -->
       <nav
         class="relative px-4 py-4 flex justify-between items-center bg-[#fff]"
       >
         <!-- logo -->
         <a class="text-3xl font-bold leading-none" href="home.html">
-         <img class="md:h-14 h-12 w-24 md:w-32" src="/images/logo.jpeg" alt="" srcset="">
+          <img
+            class="md:h-14 h-12 w-24 md:w-32"
+            src="/images/logo.jpeg"
+            alt=""
+            srcset=""
+          />
         </a>
 
         <!-- navbar for mobile device  -->
@@ -86,13 +101,11 @@
           class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
         >
           <div class="flex items-center mb-8">
-
             <!-- logo -->
             <a class="mr-auto text-3xl font-bold leading-none" href="#">
-            <img class="h-10 w-20" src="images/logo.jpeg" alt="">
+              <img class="h-10 w-20" src="images/logo.jpeg" alt="" />
             </a>
 
-            
             <button class="navbar-close">
               <svg
                 class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
@@ -111,7 +124,7 @@
             </button>
           </div>
 
-              <!-- navbar for mobile device  -->
+          <!-- navbar for mobile device  -->
           <div>
             <ul>
               <li class="mb-1">
@@ -139,10 +152,9 @@
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="contact.html"
-                  >Contact </a
-                >
+                  >Contact
+                </a>
               </li>
-             
             </ul>
           </div>
           <div class="mt-auto">
@@ -166,43 +178,557 @@
       </div>
     </div>
 
-   <!-- footer -->
-   <footer class="bg-black boxShadow  w-full p-6 lg:p-9">
-    <div class="flex justify-center gap-[30px] flex-wrap w-full sm:px-32">
+    <!-- banner -->
+    <div
+      class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden mb-20 md:mb-40"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="images/banner-image.jpg"
+          alt="Background Image"
+          class="object-cover object-center w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+
+      <div
+        class="relative z-10 flex flex-col justify-center items-center h-full text-center"
+      >
+        <h1
+          class="md:w-[70%] w-[96%] max-auto text-2xl md:text-5xl font-bold leading-tight mb-4"
+        >
+          Premium Lubricants for Optimal Performance
+        </h1>
+        <p class="md:w-[70%] w-[96%] max-auto text-base text-gray-300 mb-8">
+          Our lubricants provide superior protection against wear, rust, and
+          extreme temperatures, ensuring that your engine runs smoothly, no
+          matter the conditions. Whether it's for personal vehicles, heavy-duty
+          machinery, or industrial equipment, we've got the right solution for
+          you.
+        </p>
+
+        <a
+          href="product.html"
+          class="bg-red-400 text-gray-900 hover:bg-red-650 py-2 px-6 rounded-full text-base lg:text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >Explore Products</a
+        >
+      </div>
+    </div>
+    <main class="w-[90%] mx-auto">
+      <!-- Our latest Product -->
+      <div class="mb-20 lg:mb-40">
+        <h1 class="lg:text-3xl text-lg font-bold text-center mb-8">Our Latest <span class="text-red-400">Product</span></h1>
+
+       <!-- product all -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- single product -->
+      <div>
         <div
-            class="flex justify-center sm:justify-between gap-[30px] w-full flex-wrap">
-            <a href="#"><p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">Home</p></a>
-           <a href="product.html"> <p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">Our Product</p></a>
-           <a href="about.html"> <p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">About Us</p></a>
-      
-            <a href="contact.html"><p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">Contact
-              Us</p></a>
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product2.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+      <!-- single product -->
+      <div>
+        <div
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product1.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+      <!-- single product -->
+      <div>
+        <div
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product2.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+      <!-- single product -->
+      <div>
+        <div
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product1.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+      <!-- single product -->
+      <div>
+        <div
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product2.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+      <!-- single product -->
+      <div>
+        <div
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product1.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+      <!-- single product -->
+      <div>
+        <div
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product2.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+      <!-- single product -->
+      <div>
+        <div
+          class="w-full h-[350px]  relative overflow-hidden group cursor-pointer border shadow-lg p-5 rounded-md"
+        >
+          <!-- image -->
+          <img
+            src="images/product1.jpeg"
+            alt="animated_card"
+            class="w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-700"
+          />
+
+          <!-- text -->
+          <div
+            class="absolute top-[50%] transform group-hover:translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 right-0 flex items-center justify-center flex-col"
+          >
+            <h1
+              class="text-[1.5rem] font-bold text-white text-center capitalize"
+            >
+             Syntrec Motor Oil
+            </h1>
+            
+          </div>
+
+          <!-- bottom shadow -->
+          <div
+            class="w-full opacity-0 z-[-1] group-hover:opacity-100 group-hover:z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0"
+          ></div>
+        </div>
+      </div>
+    
+
+    </div>
+
+      </div>
+
+      <!-- faq section -->
+      <section class="mb-20 md:mb-40">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full"
+          >
+            <div class="w-full lg:w-1/2">
+              <img
+                src="images/faq-image.jpg"
+                alt="FAQ lubricant oil section"
+                class="w-full rounded-xl object-cover"
+              />
+            </div>
+            <div class="w-full lg:w-1/2">
+              <div class="lg:max-w-xl">
+                <div class="mb-6 lg:mb-16">
+                  <h6
+                    class="text-lg text-center font-medium text-indigo-600 mb-2 lg:text-left"
+                  >
+                    FAQs
+                  </h6>
+                  <h2
+                    class="text-4xl text-center font-bold text-gray-900 leading-[3.25rem] mb-5 lg:text-left"
+                  >
+                    Need help with lubricant oils?
+                  </h2>
+                </div>
+                <div class="accordion-group" data-accordion="default-accordion">
+                  <div
+                    class="accordion pb-8 border-b border-solid border-gray-200 active"
+                    id="faq-heading-one"
+                  >
+                    <button
+                      class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium always-open"
+                      aria-controls="faq-collapse-one"
+                    >
+                      <h5>
+                        What is the difference between synthetic and mineral
+                        oil?
+                      </h5>
+                      <svg
+                        class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                          stroke="currentColor"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      id="faq-collapse-one"
+                      class="accordion-content w-full px-0 overflow-hidden pr-4 active"
+                      style="max-height: 100px"
+                    >
+                      <p class="text-base font-normal text-gray-600">
+                        Synthetic oil is chemically engineered for better
+                        performance, higher temperature resistance, and longer
+                        life. Mineral oil is derived from refined crude oil and
+                        is typically cheaper, but may require more frequent
+                        changes.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="accordion py-8 border-b border-solid border-gray-200"
+                    id="faq-heading-two"
+                  >
+                    <button
+                      class="accordion-toggle group inline-flex items-center justify-between font-normal text-xl leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium"
+                      aria-controls="faq-collapse-two"
+                    >
+                      <h5>How often should I change my lubricant oil?</h5>
+                      <svg
+                        class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                          stroke="currentColor"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      id="faq-collapse-two"
+                      class="accordion-content w-full px-0 overflow-hidden pr-4"
+                    >
+                      <p class="text-base text-gray-500 font-normal">
+                        The oil change interval depends on the type of oil and
+                        the manufacturer's recommendation. Generally, synthetic
+                        oils last longer (around 7,500-10,000 miles), while
+                        conventional oils may need to be changed every
+                        3,000-5,000 miles.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="accordion py-8 border-b border-solid border-gray-200"
+                    id="faq-heading-three"
+                  >
+                    <button
+                      class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                      aria-controls="faq-collapse-three"
+                    >
+                      <h5>Can I switch from mineral oil to synthetic oil?</h5>
+                      <svg
+                        class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                          stroke="currentColor"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      id="faq-collapse-three"
+                      class="accordion-content w-full px-0 overflow-hidden pr-4"
+                    >
+                      <p class="text-base text-gray-500 font-normal">
+                        Yes, you can switch from mineral to synthetic oil.
+                        However, it's recommended to consult your vehicle's
+                        manual or mechanic before making the switch, as
+                        different engines have specific requirements.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion py-8" id="faq-heading-four">
+                    <button
+                      class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                      aria-controls="faq-collapse-four"
+                    >
+                      <h5>What lubricant oil is best for my vehicle?</h5>
+                      <svg
+                        class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                          stroke="currentColor"
+                          stroke-width="1.6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                    <div
+                      id="faq-collapse-four"
+                      class="accordion-content w-full px-0 overflow-hidden pr-4"
+                    >
+                      <p class="text-base text-gray-500 font-normal">
+                        The best lubricant for your vehicle depends on the
+                        manufacturer’s specifications, the type of engine, and
+                        the climate you drive in. Synthetic oils are generally
+                        recommended for high-performance engines and extreme
+                        weather conditions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black boxShadow w-full p-6 lg:p-9">
+      <div class="flex justify-center gap-[30px] flex-wrap w-full sm:px-32">
+        <div
+          class="flex justify-center sm:justify-between gap-[30px] w-full flex-wrap"
+        >
+          <a href="#"
+            ><p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Home
+            </p></a
+          >
+          <a href="product.html">
+            <p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Our Product
+            </p></a
+          >
+          <a href="about.html">
+            <p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              About Us
+            </p></a
+          >
+
+          <a href="contact.html"
+            ><p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Contact Us
+            </p></a
+          >
         </div>
 
         <div class="flex items-center flex-wrap gap-[10px] text-text">
-            <a class="text-[1.3rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-solid fa-x"></i>
-            </a>
-            <a class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <a
+            class="text-[1.3rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-solid fa-x"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
-
 
         <div
-            class="border-t border-gray-200 pt-[20px] flex items-center w-full flex-wrap gap-[20px] justify-center">
-            <p class="text-[0.8rem] sm:text-[0.9rem] text-gray-600">© Top One Lubricant. All Rights
-                Reserved. </p>
+          class="border-t border-gray-200 pt-[20px] flex items-center w-full flex-wrap gap-[20px] justify-center"
+        >
+          <p class="text-[0.8rem] sm:text-[0.9rem] text-gray-600">
+            © Top One Lubricant. All Rights Reserved.
+          </p>
         </div>
-    </div>
-</footer>
-
+      </div>
+    </footer>
+    <!-- for menu -->
     <script>
       // Burger menus
       document.addEventListener("DOMContentLoaded", function () {
@@ -243,6 +769,25 @@
             });
           }
         }
+      });
+    </script>
+
+    <!-- collups faq -->
+    <script>
+      document.querySelectorAll(".accordion-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+          const accordionContent = button.nextElementSibling;
+          const accordionItem = button.parentElement;
+
+          accordionItem.classList.toggle("active");
+
+          if (accordionItem.classList.contains("active")) {
+            accordionContent.style.maxHeight =
+              accordionContent.scrollHeight + "px";
+          } else {
+            accordionContent.style.maxHeight = 0;
+          }
+        });
       });
     </script>
   </body>
