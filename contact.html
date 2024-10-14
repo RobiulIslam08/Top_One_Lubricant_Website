@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- navbar  -->
-    <div >
+    <div>
       <!-- component -->
       <nav
         class="relative px-4 py-4 flex justify-between items-center bg-[#fff]"
       >
-    <!-- logo -->
-    <a class="text-3xl font-bold leading-none" href="home.html">
-      <img class="md:h-14 h-12 w-24 md:w-32" src="/images/logo.jpeg" alt="" srcset="">
-     </a>
+        <!-- logo -->
+        <a class="text-3xl font-bold leading-none" href="home.html">
+          <img
+            class="md:h-14 h-12 w-24 md:w-32"
+            src="/images/logo.jpeg"
+            alt=""
+            srcset=""
+          />
+        </a>
 
         <!-- navbar for mobile device  -->
         <div class="lg:hidden">
@@ -86,10 +97,10 @@
           class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
         >
           <div class="flex items-center mb-8">
-               <!-- logo -->
-               <a class="mr-auto text-3xl font-bold leading-none" href="#">
-                <img class="h-10 w-20" src="images/logo.jpeg" alt="">
-                </a>
+            <!-- logo -->
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <img class="h-10 w-20" src="images/logo.jpeg" alt="" />
+            </a>
             <button class="navbar-close">
               <svg
                 class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
@@ -166,43 +177,141 @@
         </nav>
       </div>
     </div>
-    <h1 class="h-screen">Contact Page</h1>
-   <!-- footer -->
-   <footer class="bg-black boxShadow  w-full p-6 lg:p-9">
-    <div class="flex justify-center gap-[30px] flex-wrap w-full sm:px-32">
+
+    <main>
+      <div class="">
+        <h1 class="text-3xl font-bold mt-5 mb-10 text-center">Countact Us</h1>
+        <section
+          class="w-full grid grid-cols-1 lg:grid-cols-3 gap-[30px] boxShadow justify-center items-center p-[40px] rounded-xl"
+        >
+          <!-- form area -->
+          <form class="w-full md:col-span-2">
+            <div class="text-gray-800">
+              <h1 class="text-[2rem] font-[600] leading-[35px]">
+                Get in <span class="text-red-400">touch</span>
+              </h1>
+              <p class="text-[0.9rem] mt-2 mb-8">
+                Let"s align our constellations! Reach out and let the magic of
+                collaboration illuminate our skies.
+              </p>
+            </div>
+
+            <div class="flex sm:flex-row flex-col items-center gap-[20px]">
+              <div class="flex flex-col gap-[5px] w-full sm:w-[50%]">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="peer border-gray-300 border rounded-md outline-none px-4 py-3 w-full text-gray-400 transition-colors duration-300"
+                />
+              </div>
+
+              <div class="flex flex-col gap-[5px] w-full sm:w-[50%]">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  class="peer border-gray-300 border rounded-md outline-none px-4 py-3 w-full text-gray-400 transition-colors duration-300"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[5px] w-full mt-[20px]">
+              <textarea
+                placeholder="Write message"
+                class="peer min-h-[200px] border-gray-300 border rounded-md outline-none px-4 py-3 w-full text-gray-400 transition-colors duration-300"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="py-2.5 px-6 bg-gray-800 text-white rounded-md text-[1rem] mt-[10px] w-full"
+            >
+              Submit
+            </button>
+          </form>
+
+          <!-- image -->
+          <div class="hidden lg:flex h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57903.02583821205!2d91.81983571134349!3d24.900058347354335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1723916219404!5m2!1sen!2sbd"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              className="w-full h-full rounded-md"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black boxShadow w-full p-6 lg:p-9">
+      <div class="flex justify-center gap-[30px] flex-wrap w-full sm:px-32">
         <div
-            class="flex justify-center sm:justify-between gap-[30px] w-full flex-wrap">
-            <a href="home.html"><p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">Home</p></a>
-           <a href="product.html"> <p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">Our Product</p></a>
-           <a href="about.html"> <p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">About Us</p></a>
-      
-            <a href="contact.html"><p class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white">Contact
-              Us</p></a>
+          class="flex justify-center sm:justify-between gap-[30px] w-full flex-wrap"
+        >
+          <a href="home.html"
+            ><p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Home
+            </p></a
+          >
+          <a href="product.html">
+            <p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Our Product
+            </p></a
+          >
+          <a href="about.html">
+            <p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              About Us
+            </p></a
+          >
+
+          <a href="contact.html"
+            ><p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Contact Us
+            </p></a
+          >
         </div>
 
         <div class="flex items-center flex-wrap gap-[10px] text-text">
-            <a class="text-[1.3rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-solid fa-x"></i>
-            </a>
-            <a class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <a
+            class="text-[1.3rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-solid fa-x"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
-
 
         <div
-            class="border-t border-gray-200 pt-[20px] flex items-center w-full flex-wrap gap-[20px] justify-center">
-            <p class="text-[0.8rem] sm:text-[0.9rem] text-gray-600">© Top One Lubricant. All Rights
-                Reserved. </p>
+          class="border-t border-gray-200 pt-[20px] flex items-center w-full flex-wrap gap-[20px] justify-center"
+        >
+          <p class="text-[0.8rem] sm:text-[0.9rem] text-gray-600">
+            © Top One Lubricant. All Rights Reserved.
+          </p>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <script>
       // Burger menus
