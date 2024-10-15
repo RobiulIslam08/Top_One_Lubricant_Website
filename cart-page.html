@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- for aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <div>
+      <!-- component -->
+      <nav
+        class="relative px-4 py-4 flex justify-between items-center bg-[#fff]"
+      >
+        <!-- logo -->
+        <a class="text-3xl font-bold leading-none" href="home.html">
+          <img
+            class="md:h-14 h-12 w-24 md:w-32"
+            src="/images/logo.jpeg"
+            alt=""
+            srcset=""
+          />
+        </a>
+
+        <!-- navbar for mobile device  -->
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center text-blue-600 p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- navbar for large device -->
+        <ul
+          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+        >
+          <li>
+            <a
+              class="text-md font-semibold text-gray-600 hover:text-blue-600"
+              href="home.html"
+              >Home</a
+            >
+          </li>
+          <li class="text-gray-400">|</li>
+          <li>
+            <a
+              class="text-md font-semibold text-gray-600 hover:text-blue-600"
+              href="product.html"
+              >Our Product</a
+            >
+          </li>
+          <li class="text-gray-400">|</li>
+          <li>
+            <a
+              class="text-md font-semibold text-gray-600 hover:text-blue-600"
+              href="about.html"
+              >About Us</a
+            >
+          </li>
+          <li class="text-gray-400">|</li>
+
+          <li>
+            <a
+              class="text-md font-semibold text-gray-600 hover:text-blue-600"
+              href="contact.html"
+              >Contact Us</a
+            >
+          </li>
+
+          <!-- icon for notification and cart -->
+          <div class="flex">
+            <button>
+              <i class="fa-solid fa-cart-shopping p-4 text-red-400"></i>
+            </button>
+            <button><i class="fa-solid fa-bell p-4 text-blue-400"></i></button>
+          </div>
+        </ul>
+
+        <a
+          class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+          href="#"
+          >Sign In</a
+        >
+        <a
+          class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          href="#"
+          >Sign up</a
+        >
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <!-- logo -->
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <img class="h-10 w-20" src="images/logo.jpeg" alt="" />
+            </a>
+
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- navbar for mobile device  -->
+          <div>
+            <ul>
+              <!-- icon for notification and cart -->
+              <div class="flex">
+                <a href="">
+                  <button>
+                    <i
+                      class="fa-solid fa-cart-shopping p-4 text-red-400"
+                    ></i></button
+                ></a>
+                <button>
+                  <i class="fa-solid fa-bell p-4 text-blue-400"></i>
+                </button>
+              </div>
+
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="product.html"
+                  >Our Product</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="contact.html"
+                  >Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+                href="#"
+                >Sign in</a
+              >
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl"
+                href="#"
+                >Sign Up</a
+              >
+            </div>
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © 2024</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="py-24 relative">
+        <div class="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
+			<!-- title -->
+          <h2
+            class="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-black"
+          >
+            Shopping Cart
+          </h2>
+		  <!-- heading -->
+          <div class="hidden lg:grid grid-cols-2 py-6">
+            <div class="font-normal text-xl leading-8 text-gray-500">
+              Product
+            </div>
+            <p
+              class="font-normal text-xl leading-8 text-gray-500 flex items-center justify-between"
+            >
+              <span class="w-full max-w-[200px] text-center"
+                >Delivery Charge</span
+              >
+              <span class="w-full max-w-[260px] text-center">Quantity</span>
+              <span class="w-full max-w-[200px] text-center">Total</span>
+            </p>
+          </div>
+<!-- prduct one -->
+          <div 
+            class="grid grid-cols-1 lg:grid-cols-2 min-[550px]:gap-6 border-t border-gray-200 py-6 shadow-md"
+          >
+		<!-- left side img , name, price ,  -->
+            <div
+              class="flex items-center flex-col min-[550px]:flex-row gap-3 min-[550px]:gap-6 w-full max-xl:justify-center max-xl:max-w-xl max-xl:mx-auto"
+            >
+              <div class="img-box">
+                <img
+                  src="https://pagedone.io/asset/uploads/1701162850.png"
+                  alt="perfume bottle image"
+                  class="xl:w-[140px] rounded-xl object-cover"
+                />
+              </div>
+              <div class="pro-data w-full max-w-sm">
+                <h5
+                  class="font-semibold text-xl leading-8 text-black max-[550px]:text-center"
+                >
+                  Latest N-5 Perfuam
+                </h5>
+                <p
+                  class="font-normal text-lg leading-8 text-gray-500 my-2 min-[550px]:my-3 max-[550px]:text-center"
+                >
+                  Perfumes
+                </p>
+                <h6
+                  class="font-medium text-lg leading-8 text-indigo-600 max-[550px]:text-center"
+                >
+                  $120.00
+                </h6>
+              </div>
+            </div>
+			
+			<!-- delivery charge , quantity, totla amount -->
+            <div
+              class="flex items-center flex-col min-[550px]:flex-row w-full max-xl:max-w-xl max-xl:mx-auto gap-2"
+            >
+              <h6
+                class="font-manrope font-bold text-2xl leading-9 text-black w-full max-w-[176px] text-center"
+              >
+                $15.00
+                <span
+                  class="text-sm text-gray-300 ml-3 lg:hidden whitespace-nowrap"
+                  >(Delivery Charge)</span
+                >
+              </h6>
+              <div class="flex items-center w-full mx-auto justify-center">
+                <button
+                  class="group rounded-l-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50"
+                >
+                  <svg
+                    class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.5 11H5.5"
+                      stroke=""
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M16.5 11H5.5"
+                      stroke=""
+                      stroke-opacity="0.2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M16.5 11H5.5"
+                      stroke=""
+                      stroke-opacity="0.2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+               <p class="border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[118px] min-w-[80px] placeholder:text-gray-900 py-[15px] text-center bg-transparent">1</p>
+                <button
+                  class="group rounded-r-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50"
+                >
+                  <svg
+                    class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M11 5.5V16.5M16.5 11H5.5"
+                      stroke=""
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M11 5.5V16.5M16.5 11H5.5"
+                      stroke=""
+                      stroke-opacity="0.2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M11 5.5V16.5M16.5 11H5.5"
+                      stroke=""
+                      stroke-opacity="0.2"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+			  <!-- total -->
+              <h6
+                class="text-indigo-600 font-manrope font-bold text-2xl leading-9 w-full max-w-[176px] text-center"
+              >
+                $120.00
+              </h6>
+            </div>
+
+			
+          </div>
+
+     <!-- sub total, delivery charge , total -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 w-full mb-8 max-lg:max-w-xl max-lg:mx-auto lg:mt-20 mt-10"
+          >
+
+		  <!-- sub total -->
+            <div class="flex items-center justify-between w-full mb-6">
+				
+              <p class="font-normal text-xl leading-8 text-gray-400">
+                Sub Total
+              </p>
+
+              <h6 class="font-semibold text-xl leading-8 text-gray-900">
+                $360.00
+              </h6>
+            </div>
+			<!-- devlivery charge -->
+            <div
+              class="flex items-center justify-between w-full pb-6 border-b border-gray-200"
+            >
+              <p class="font-normal text-xl leading-8 text-gray-400">
+                Delivery Charge
+              </p>
+              <h6 class="font-semibold text-xl leading-8 text-gray-900">
+                $45.00
+              </h6>
+            </div>
+			<!-- total amount -->
+            <div class="flex items-center justify-between w-full py-6">
+              <p
+                class="font-manrope font-medium text-2xl leading-9 text-gray-900"
+              >
+                Total
+              </p>
+              <h6
+                class="font-manrope font-medium text-2xl leading-9 text-indigo-500"
+              >
+                $405.00
+              </h6>
+            </div>
+          </div>
+
+
+
+		  <!-- add cupon and continue to payment -->
+          <div
+            class="flex items-center flex-col sm:flex-row justify-center gap-3 mt-8"
+          >
+            <button
+              class="rounded-full py-4 w-full max-w-[280px] flex items-center bg-indigo-50 justify-center transition-all duration-500 hover:bg-indigo-100"
+            >
+              <span class="px-2 font-semibold text-lg leading-8 text-indigo-600"
+                >Add Coupon Code</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+              >
+                <path
+                  d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998"
+                  stroke="#4F46E5"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              class="rounded-full w-full max-w-[280px] py-4 text-center justify-center items-center bg-red-400 font-semibold text-lg text-white flex transition-all duration-500 hover:bg-indigo-700"
+            >
+              Continue to Payment
+              <svg
+                class="ml-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="22"
+                viewBox="0 0 23 22"
+                fill="none"
+              >
+                <path
+                  d="M8.75324 5.49609L14.2535 10.9963L8.75 16.4998"
+                  stroke="white"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black boxShadow w-full p-6 lg:p-9">
+      <div class="flex justify-center gap-[30px] flex-wrap w-full sm:px-32">
+        <div
+          class="flex justify-center sm:justify-between gap-[30px] w-full flex-wrap"
+        >
+          <a href="#"
+            ><p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Home
+            </p></a
+          >
+          <a href="product.html">
+            <p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Our Product
+            </p></a
+          >
+          <a href="about.html">
+            <p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              About Us
+            </p></a
+          >
+
+          <a href="contact.html"
+            ><p
+              class="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-white"
+            >
+              Contact Us
+            </p></a
+          >
+        </div>
+
+        <div class="flex items-center flex-wrap gap-[10px] text-text">
+          <a
+            class="text-[1.3rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-solid fa-x"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="text-[1.2rem] p-1.5 cursor-pointer rounded-full text-blue-400 hover:text-white hover:bg-primary transition-all duration-300"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <div
+          class="border-t border-gray-200 pt-[20px] flex items-center w-full flex-wrap gap-[20px] justify-center"
+        >
+          <p class="text-[0.8rem] sm:text-[0.9rem] text-gray-600">
+            © Top One Lubricant. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- for menu -->
+    <script>
+      // Burger menus
+      document.addEventListener("DOMContentLoaded", function () {
+        // open
+        const burger = document.querySelectorAll(".navbar-burger");
+        const menu = document.querySelectorAll(".navbar-menu");
+
+        if (burger.length && menu.length) {
+          for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        // close
+        const close = document.querySelectorAll(".navbar-close");
+        const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+        if (close.length) {
+          for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+
+        if (backdrop.length) {
+          for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener("click", function () {
+              for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle("hidden");
+              }
+            });
+          }
+        }
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

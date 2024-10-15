@@ -20,19 +20,24 @@
          </a>
 
         <!-- navbar for mobile device  -->
-        <div class="lg:hidden">
-          <button class="navbar-burger flex items-center text-blue-600 p-3">
-            <svg
-              class="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
-
+        <div class="lg:hidden flex items-center gap-4">
+          <!-- icon for notification and cart -->
+          <div class="flex items-center gap-3">
+            <a href="cart-page.html"> <button> <i class="fa-solid fa-cart-shopping  text-red-400"></i></button></a>
+             <button><i class="fa-solid fa-bell  text-blue-400"></i></button>
+ 
+            </div>
+      <button class="navbar-burger flex items-center text-blue-600 p-3">
+        <svg
+          class="block h-4 w-4 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Mobile menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
         <!-- navbar for large device -->
         <ul
           class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
@@ -66,9 +71,15 @@
             <a
               class="text-md font-semibold text-gray-600 hover:text-blue-600"
               href="contact.html"
-              >Contact</a
+              >Contact Us</a
             >
           </li>
+             <!-- icon for notification and cart -->
+             <div class="flex">
+              <a href="cart-page.html"> <button> <i class="fa-solid fa-cart-shopping p-4 text-red-400"></i></button></a>
+               <button><i class="fa-solid fa-bell p-4 text-blue-400"></i></button>
+   
+              </div>
         </ul>
         <a
           class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
@@ -110,6 +121,12 @@
           </div>
               <!-- navbar for mobile device  -->
           <div>
+               <!-- icon for notification and cart -->
+          <div class="flex">
+            <a href="cart-page.html"> <button> <i class="fa-solid fa-cart-shopping p-4 text-red-400"></i></button></a>
+             <button><i class="fa-solid fa-bell p-4 text-blue-400"></i></button>
+ 
+            </div>
             <ul>
               <li class="mb-1">
                 <a
@@ -136,7 +153,7 @@
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="contact.html"
-                  >Contact </a
+                  >Contact Us</a
                 >
               </li>
              
