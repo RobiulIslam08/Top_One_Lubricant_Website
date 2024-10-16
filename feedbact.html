@@ -11,9 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!-- navbar  -->
+   <!-- navbar  -->
     <div>
       <!-- component -->
       <nav
@@ -31,12 +34,23 @@
 
         <!-- navbar for mobile device menu   -->
         <div class="lg:hidden flex items-center gap-4">
-          <!-- icon for notification and cart -->
-          <div class="flex items-center gap-3">
-            <a href="cart-page.html"> <button> <i class="fa-solid fa-cart-shopping  text-red-400"></i></button></a>
-             <button><i class="fa-solid fa-bell  text-blue-400"></i></button>
- 
-            </div>
+           <!-- icon for notification and cart -->
+           <div class="flex items-center gap-4">
+            <!-- for cart -->
+                <div class="relative">
+                  <p class="absolute -top-3  rounded-full text-sm px-[3px] -right-1 font-semibold bg-slate-100 ">3</p>
+                  <a href="cart-page.html"> <button> <i class="fa-solid fa-cart-shopping  text-red-400"></i></button></a>
+                </div>
+
+                <!-- for notification -->
+
+                <div class="relative">
+                  <p class="absolute -top-3  rounded-full text-sm px-[3px] -right-1 font-semibold bg-slate-100 ">1</p>
+                  
+                   <button><i class="fa-solid fa-bell  text-blue-400"></i></button>
+                </div>
+     
+                </div>
       <button class="navbar-burger flex items-center text-blue-600 p-3">
         <svg
           class="block h-4 w-4 fill-current"
@@ -72,6 +86,14 @@
           <li>
             <a
               class="text-md font-semibold text-gray-600 hover:text-blue-600"
+              href="feedbact.html"
+              >Our Feedback</a
+            >
+          </li>
+          <li class="text-gray-400">|</li>
+          <li>
+            <a
+              class="text-md font-semibold text-gray-600 hover:text-blue-600"
               href="about.html"
               >About Us</a
             >
@@ -86,12 +108,23 @@
             >
           </li>
 
-             <!-- icon for notification and cart -->
-             <div class="flex">
-              <a href="cart-page.html"> <button> <i class="fa-solid fa-cart-shopping p-4 text-red-400"></i></button></a>
-               <button><i class="fa-solid fa-bell p-4 text-blue-400"></i></button>
-   
-              </div>
+                <!-- icon for notification and cart -->
+                <div class="flex items-center gap-4">
+                  <!-- for cart -->
+                      <div class="relative">
+                        <p class="absolute -top-3  rounded-full text-sm px-[3px] -right-1 font-semibold bg-slate-100 ">3</p>
+                        <a href="cart-page.html"> <button> <i class="fa-solid fa-cart-shopping  text-red-400"></i></button></a>
+                      </div>
+      
+                      <!-- for notification -->
+      
+                      <div class="relative">
+                        <p class="absolute -top-3  rounded-full text-sm px-[3px] -right-1 font-semibold bg-slate-100 ">1</p>
+                        
+                         <button><i class="fa-solid fa-bell  text-blue-400"></i></button>
+                      </div>
+           
+                      </div>
         </ul>
         <a
           class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
@@ -154,6 +187,13 @@
               <li class="mb-1">
                 <a
                   class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="feedbact.html"
+                  >Our Feedback</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="about.html"
                   >About Us</a
                 >
@@ -190,9 +230,9 @@
     </div>
 
    <main>
-	<section class="py-24 relative">
+	<section class="pt-6 pb-10 relative">
         <div class="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
-            <h2 class="font-manrope font-bold text-4xl text-black text-center mb-11">People Love Us</h2>
+            <h2 class="font-manrope font-bold lg:text-3xl text-2xl text-black text-center mb-11">People <span class="text-red-400">Love Us</span></h2>
             <div class="grid grid-cols-12 py-6 border-y border-gray-200 mb-11">
                 <div class="col-span-12 lg:col-span-10 ">
                     <h5 class="font-manrope font-semibold text-2xl leading-9 text-black text-center">Reviews
@@ -206,12 +246,12 @@
             </div>
             <div class="grid grid-cols-1 gap-8">
 
-                <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
+                <div data-aos="fade-down" class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
                     <div class="col-span-12 lg:col-span-10 ">
                         <div class="sm:flex gap-6">
-                            <img src="https://pagedone.io/asset/uploads/1704364459.png" alt="Robert image" class="w-32 h-32 rounded-full object-cover">
+                            <img src="images/man1.jpg" alt="Robert image" class="w-32 h-32 rounded-full object-cover">
                             <div class="text">
-                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
+                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Jakir Ahmed</p>
                                 <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                                         fill="none">
@@ -279,21 +319,8 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">One of the standout features of Pagedone is its intuitive and user-friendly interface. Navigating through the system feels natural, and the layout makes it easy to locate and utilize various design elements. This is particularly beneficial for designers looking to streamline their workflow.  </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="cursor-pointers flex items-center gap-2">
-                                        <a href="javascript:;" class="font-semibold text-lg cursor-pointer leading-8 text-indigo-600 whitespace-nowrap">
-                                            View & Reply</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                            viewBox="0 0 22 22" fill="none">
-                                            <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p
-                                        class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                        Nov 01, 2023</p>
-                                </div>
+                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">I’ve been using this lubricant oil for the past few months, and it works amazingly. My engine runs smoother, and there’s no unusual noise. Definitely worth the price! </p>
+                             
                             </div>
                         </div>
                     </div>
@@ -366,17 +393,16 @@
                                 </defs>
                             </svg>
                         </div>
-                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov 01,
-                            2023</p>
+                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Oct 10, 2024</p>
                     </div>
                 </div>
                 <div class="pb-8 border-b border-gray-100 w-full"></div>
-                <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
+                <div data-aos="fade-down" class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto"> 
                     <div class="col-span-12 lg:col-span-10 ">
                         <div class="sm:flex gap-6">
-                            <img src="https://pagedone.io/asset/uploads/1704364533.png" alt="Robert image" class="w-32 h-32 rounded-full object-cover">
+                            <img src="images/man2.jpeg" alt="Robert image" class="w-32 h-32 rounded-full object-cover">
                             <div class="text">
-                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
+                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Rabiul Islam</p>
                                 <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                                         fill="none">
@@ -444,23 +470,10 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Pagedone excels in addressing the demand for responsive design. Its features ensure that designs not only look great on desktop but also seamlessly adapt to various screen sizes, providing a consistent user experience across devices.
+                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Excellent lubricant! It has improved my vehicle’s performance and reduced the fuel consumption noticeably. Highly recommend for anyone looking for long-term use.
 
                                 </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <a href="javascript:;" class="font-semibold text-lg cursor-pointer leading-8 text-indigo-600 whitespace-nowrap">
-                                            View & Reply</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                            viewBox="0 0 22 22" fill="none">
-                                            <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p
-                                        class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                        Nov 01, 2023</p>
-                                </div>
+                              
                             </div>
                         </div>
                     </div>
@@ -533,17 +546,17 @@
                                 </defs>
                             </svg>
                         </div>
-                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov 01,
-                            2023</p>
+                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Jun 01,
+                            2024</p>
                     </div>
                 </div>
                 <div class="pb-8 border-b border-gray-100 w-full"></div>
-                <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
+                <div data-aos="fade-down" class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
                     <div class="col-span-12 lg:col-span-10 ">
                         <div class="sm:flex gap-6">
                             <img src="https://pagedone.io/asset/uploads/1704364549.png" alt="Robert image" class="w-32 h-32 rounded-full object-cover">
                             <div class="text">
-                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
+                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Tanvair Mahtab</p>
                                 <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                                         fill="none">
@@ -611,22 +624,9 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Collaboration is made seamless with Pagedone's collaboration tools. Whether working within a team or seeking client feedback, the system facilitates effective communication and real-time collaboration, enhancing the overall design process.
+                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">This lubricant oil is simply the best in the market. My car feels brand new after every oil change. The engine is quieter and the overall performance has improved.
                                 </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <a href="javascript:;" class="font-semibold text-lg cursor-pointer leading-8 text-indigo-600 whitespace-nowrap">
-                                            View & Reply</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                            viewBox="0 0 22 22" fill="none">
-                                            <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p
-                                        class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                        Nov 01, 2023</p>
-                                </div>
+                              
                             </div>
                         </div>
                     </div>
@@ -699,17 +699,17 @@
                                 </defs>
                             </svg>
                         </div>
-                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov 01,
-                            2023</p>
+                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Jan 21,
+                            2024</p>
                     </div>
                 </div>
                 <div class="pb-8 border-b border-gray-100 w-full"></div>
-                <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
+                <div data-aos="fade-down" class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
                     <div class="col-span-12 lg:col-span-10 ">
                         <div class="sm:flex gap-6">
                             <img src="https://pagedone.io/asset/uploads/1704364560.png" alt="Robert image" class="w-32 h-32 rounded-full object-cover">
                             <div class="text">
-                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
+                                <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Tanjil Hasan</p>
                                 <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                                         fill="none">
@@ -777,21 +777,8 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Pagedone doesn't disappoint when it comes to the variety and richness of its design components. From pre-built templates to customizable elements, the system caters to both beginners and seasoned designers. The extensive library ensures a diverse range of options to bring creative visions to life.  </p>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center gap-2">
-                                        <a href="javascript:;" class="font-semibold text-lg leading-8 text-indigo-600 whitespace-nowrap cursor-pointer">
-                                            View & Reply</a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                            viewBox="0 0 22 22" fill="none">
-                                            <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <p
-                                        class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                        Nov 01, 2023</p>
-                                </div>
+                                <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Amazing product! The lubricant has exceeded my expectations in terms of performance. My engine runs so much better, and there’s no overheating issue anymore.</p>
+                              
                             </div>
                         </div>
                     </div>
@@ -864,8 +851,8 @@
                                 </defs>
                             </svg>
                         </div>
-                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov 01,
-                            2023</p>
+                        <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Aug 10,
+                            2024</p>
                     </div>
                 </div>
             </div>
@@ -986,5 +973,13 @@
         }
       });
     </script>
+
+
+
+<!-- aos animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
